@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+        #result {
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="homework.js" defer></script>
+</head>
+<body>
+<div>
+    <input type="number" id="num1" placeholder="Enter number 1">
+    <button onclick="appendToResult('+')">+</button>
+    <input type="number" id="num2" placeholder="Enter number 2">
+    <button onclick="calculateResult()">=</button>
+    <button onclick="calculate()">Run</button>
+    <input type="text" id="result" readonly>
+</div>
+<!--<ul id="history"></ul>-->
+<div class="history">
+
+</div>
+</body>
+</html>
